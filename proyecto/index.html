@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP | Pagina Oficial</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/e85d0a813a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgYTLCdqqIpDRCtutsVLOCGPrOa7Yppw_kCw&s" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>PHP</h1>
+        </div>
+
+        <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#">Información</a>
+                <a href="#">Caracteristicas</a>
+                <a href="#">Documentación</a>
+        </nav>
+
+        <div class="menu-adaptive" id="menuAdaptive">
+            <i onclick="abrirMenu()" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="close-icon" onclick="cerrarMenu()">
+            <span>X</span>
+        </div>
+        <a href="index.html">Inicio</a>
+        <a href="#">Información</a>
+        <a href="#">Características</a>
+        <a href="#">Documentación</a>
+    </div>
+
+
+    <div class="contenedor-principal">
+        <div class="image">
+            <img src="assets/background.svg" alt="">
+        </div>
+
+        <div class="informacion">
+            <h2>¿Que es PHP?</h2>
+
+            <p>PHP (PHP: Hypertext Preprocessor) es un lenguaje de programación del lado del servidor, lo que significa que se ejecuta en el servidor web donde está alojada tu página web. Su principal función es generar contenido dinámico y interactuar con bases de datos para crear aplicaciones web dinámicas y sitios web interactivos.</p>
+        </div>
+    </div>   
+
+    <script src="js/main.js"></script>
+</body>
+</html>
