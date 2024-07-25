@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #2a2a2a;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+header nav{
+    margin-left: 30vw;
+}
+
+header .title{
+    color: white;
+    margin-left: 100px;
+}
+
+header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+header nav a:hover{
+    color: #eee;
+    background-color: #007bff;
+    transition: all .7s;
+}
+
+.menu-adaptive{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU TELEFONOS */
+.menu-toggle{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    transform: translateX(-100%);
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    transition: opacity 1s, transform 1.6s;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    /* Añade estilos adicionales según tus preferencias */
+}
+
+.menu-toggle a{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.menu-toggle a:hover{
+    color: #eee;
+    background-color: #007bff;
+    transition: .8s;
+}
+
+/* CONTAINER PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.contenedor-principal .image{
+    width: 350px;
+    height: 400px;
+}
+
+.contenedor-principal .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-principal .informacion{
+    width: 800px;
+    height: 250px;
+    text-align: center;
+    margin-left: 10rem;
+}
+
+.contenedor-principal .informacion h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contenedor-principal .informacion p{
+    line-height: 20px;
+    font-weight: 600;
+}
+
+/* UTILIZABLES */
+.utilizable{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.utilizable img{
+    width: 200px;
+    border-radius: 100%;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1238px){
+    header nav{
+        margin-left: 18vw;
+    }
+}
+
+@media screen and (max-width: 1131px){
+    header nav{
+        margin-left: 17vw;
+    }
+
+    header nav a{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 972px){
+    header nav{
+        margin-left: 8vw;
+    }
+}
+
+@media screen and (max-width: 877px){
+    header nav{
+        margin-left:6vw;
+    }
+
+    header nav a{
+        margin-left: 5px;
+    }
+
+    header .title{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 827px){
+    header nav{
+        margin-left: 5vw;
+    }
+
+    header nav a{
+        margin-left: 3px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .contenedor-principal{
+        flex-direction: column;
+        align-items: center; /* Centra los elementos verticalmente */
+        text-align: center; /* Alinea el contenido al centro horizontalmente */
+        box-shadow: none;
+        height: auto;
+        padding: 20px 50px;
+    }
+
+    .contenedor-principal .image {
+        width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+        max-width: 350px; /* Define un ancho máximo si es necesario */
+        margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+    }
+
+    .contenedor-principal .informacion{
+        width: 90%; /* Ajusta el ancho del contenido de información según sea necesario */
+        max-width: 1000px; /* Define un ancho máximo si es necesario */
+        margin-left: auto; /* Centra el contenido horizontalmente */
+        margin-right: auto; /* Centra el contenido horizontalmente */
+    }
+}
+
+
+
+@media screen and (max-width: 738px){
+    header nav{
+        display: none;
+    }
+
+    header .menu-adaptive{
+        display: flex;
+        margin-left: 83%;
+    }
+
+    
+}
+
+@media screen and (max-width: 626px){
+    header .menu-adaptive{
+        margin-left: 70vw;
+    }
+}
+
+@media screen and (max-width: 448px){
+    header .menu-adaptive{
+        margin-left: 60vw;
+    }
+
+    .contenedor-principal{
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 336px){
+    header .menu-adaptive{
+        margin-left: 55vw;
+    }
+}
